@@ -1,0 +1,14 @@
+.buttonLink {
+    background: radial-gradient(circle, #FFC0CB, #ADD8E6, #E0BBE4);
+    border: none;
+    border-radius: 8px; /* Valor para redondear las esquinas */
+    color: rgb(0, 0, 0);
+    font-size: 15px; /* Aumenta el tamaño de la fuente */
+    padding: 15px 30px; /* Aumenta el espacio interior (padding) del botón */
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }

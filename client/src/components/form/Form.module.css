@@ -1,0 +1,60 @@
+.create {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background: radial-gradient(circle,  #FFC0CB, #ADD8E6, #E0BBE4);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px #888888;
+}
+
+/* Estilo para los elementos del formulario */
+.create input[type="text"],
+.create input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.create label {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Estilo para el botón de envío */
+.create button {
+  display: inline-block;
+  padding: 10px 20px;
+  background: radial-gradient(circle, #FF83A8, #7FA3D5, #B487C9);
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.create button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilo para los mensajes de error */
+.create .error {
+  color: #ff0000;
+  font-size: 14px;
+}
+
+/* Estilo para el mensaje de éxito */
+.create .success-message {
+  color: #00cc00;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Estilo para la lista de temperamentos */
+.create .custom-options {
+  background-color: #f4f4f4;
+  padding: 5px;
+  margin: 2px;
+}

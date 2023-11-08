@@ -1,0 +1,16 @@
+.pageContainer {
+
+  height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentContainer {
+  background: linear-gradient(45deg, #FFC0CB, #ADD8E6, #E0BBE4);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}

@@ -1,0 +1,21 @@
+.navBar {
+ 
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 10vh; /* Ajusta la altura según tu diseño */
+  }
+
+.navBar Button{
+    background-color: rgba(148,187,233,1);
+    border: none;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.navBar img{
+    width: 60px;
+    height: 65px;
+}

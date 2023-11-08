@@ -1,0 +1,12 @@
+export const GET_ALL_DOGS = "GET_ALL_DOGS";
+export const DOG_DETAIL = "DOG_DETAIL";
+export const CLEAN_DOGS = "CLEAN_DOGS";
+export const ORDER_DOGS = "ORDER_DOGS";
+export const ORDER_SOURCE = "ORDER_SOURCE";
+export const SEARCH_DOGS = "SEARCH_DOGS";
+export const CREATE_DOG = "CREATE_DOG";
+export const GET_TEMPERAMENTS = "GET_TEMPERAMENTS";
+export const FILTER_TEMPERAMENTS = "FILTER_TEMPERAMENTS";
+export const ORDER_WEIGHT = "ORDER_WEIGHT";
+export const ORDER_LIFE = "ORDER_LIFE";
+export const DELETE_DOG = "DELETE_DOG"

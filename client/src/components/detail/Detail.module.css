@@ -1,0 +1,39 @@
+.customH1 {
+ 
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir completamente el área del h1 */
+  background-position: center; /* Centra la imagen de fondo horizontalmente y verticalmente */
+  color: rgb(0, 0, 0); /* Cambia el color del texto según tus preferencias */
+  text-align: center; /* Centra el texto horizontalmente */
+  padding: 20px; /* Ajusta el espacio alrededor del texto */
+}
+
+.detailContainer {
+  
+  background-size: cover; /* Ajusta el tamaño de la imagen para que cubra completamente el elemento */
+  background-position: center; /* Centra la imagen en el elemento */
+  background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra horizontalmente en el eje X */
+  justify-content: center; /* Centra verticalmente en el eje Y */
+  height: 100vh; /* Ocupa el 100% de la altura de la pantalla */
+  text-align: center;
+}
+.detailCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Alinea el contenido en la parte superior */
+}
+  
+  .detailContainer img {
+    border-radius: 10px;
+    max-width: 100%; /* Evita que la imagen sea más ancha que su contenedor */
+  }
+  
+  .detailContainer h1 {
+    margin: 0; /* Elimina el margen predeterminado para evitar espacio adicional */
+    white-space: nowrap; /* Evita que el título se divida en varias líneas */
+    overflow: hidden; /* Evita que el título se desborde del contenedor */
+    text-overflow: ellipsis; /* Muestra "..." cuando el título es demasiado largo */
+  }
