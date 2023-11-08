@@ -1,25 +1,25 @@
+const perroLimpio = require('../utils/filtro'); // Importa el filtro
+
 const { Dog, Temperament } = require('../db');
 
 const createDog = async (req, res) => {
-  
+   const {
+    name,
+    img,
+    altura,
+    peso,
+    añosdevida,
+    temperaments, 
+  } = req.body;
   try {
-    const {
+   const dog = await Dog.create({
       name,
       img,
       altura,
       peso,
-      añosDeVida,
-      temperaments, 
-    } = req.body;
-
-    const dog = await Dog.create({
-      name,
-      img,
-      altura,
-      peso,
-      añosDeVida,
+      añosdevida,
     });
-
+    console.log("Perro creado:", dog);
     // Busca los temperamentos en la base de datos y asocia al perro
     if (temperaments && temperaments.length > 0) {
       const foundTemperaments = await Temperament.findAll({
@@ -34,16 +34,17 @@ const createDog = async (req, res) => {
       include: Temperament,
     });
 
-    res.status(200).json(dogWithTemperaments);
+    // Aplica el filtro perroLimpio al perro antes de enviar la respuesta JSON
+    const formattedDog = perroLimpio(dogWithTemperaments);
+
+    res.status(200).json(formattedDog);
   } catch (error) {
-    console.error(error);
-    res.status(500).json({ error: 'Ocurrió un error al crear el perro' });
+    console.error("Error:", error);
+    res.status(500).json({ error: error.message });
   }
 };
-module.exports = createDog;
 
-
-
+module.exports = { createDog };
 
 
 

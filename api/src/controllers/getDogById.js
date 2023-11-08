@@ -14,6 +14,7 @@ const getDogById = async (req, res) => {
     const dogFromDatabase = await Dog.findByPk(raza);
 
     if (dogFromDatabase) {
+      
       return res.json(dogFromDatabase);
     }
   } catch (error) {
